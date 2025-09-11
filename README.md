@@ -105,4 +105,4 @@ npx @modelcontextprotocol/inspector uv run ibm-watsonx-gov-catalog-mcp-server -e
   - To change credentials, either:
     - Start a new server with new env variables
 - Transport types supported : `stdio`
-- Tool call is supported  : OOTB tools , Tools created using custom code .
+- Tool call is supported  : OOTB tools , Tools created using custom code.
