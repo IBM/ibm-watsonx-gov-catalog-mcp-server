@@ -10,7 +10,7 @@ authors = [
 
 dependencies = [
      "mcp[cli]>=1.7.1",
-     "ibm-watsonx-gov[tools]>=1.0.0",
+     "ibm-watsonx-gov[tools]",
      "anyio>=4.5",
      "click>=8.1.0"
  ]
