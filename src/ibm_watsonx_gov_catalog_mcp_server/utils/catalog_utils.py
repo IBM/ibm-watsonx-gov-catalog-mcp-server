@@ -22,6 +22,13 @@ async def list_gov_tools() -> list:
         df.rename(columns={'tool_name': 'name',
                 'schema': 'inputSchema'}, inplace=True)
 
+        # Updating "threshold" type to string from schema properties if present.
+        # This implementation is added to avoid input_schema validation errors due to threshold being of type float.
+        for index, row in df.iterrows():
+            schema = row["inputSchema"]
+            if isinstance(schema, dict) and get(schema, "properties.threshold.type"):
+                schema["properties"]["threshold"]["type"] = "string"
+
         tools_1 = df.to_dict(orient="records")
         return tools_1
 
