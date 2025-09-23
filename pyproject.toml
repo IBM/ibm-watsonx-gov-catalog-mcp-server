@@ -1,10 +1,10 @@
 [project]
 name = "ibm-watsonx-gov-catalog-mcp-server"
-version = "0.0.1"
+version = "1.0.0"
 description = "An IBM watsonx.governance mcp server that connects AI agents with marketplace of tools available on governance catalog "
 readme = "README.md"
-requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
 authors = [
     { name = "IBM watsonx.governance" }
 ]
@@ -22,13 +22,9 @@ long_description_content_type = "text/markdown"
 Repository = "https://github.com/IBM/ibm-watsonx-gov-catalog-mcp-server.git"
 "Bug Tracker" = "https://github.com/IBM/ibm-watsonx-gov-catalog-mcp-server/issues"
 
-
 [project.scripts]
 ibm-watsonx-gov-catalog-mcp-server = "ibm_watsonx_gov_catalog_mcp_server:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-
-
